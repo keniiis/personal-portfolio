@@ -109,6 +109,8 @@ body{
 }
 
 .contact__mail{
+    display: flex;
+    justify-content: center;
     margin-top: 4rem;
 }
 
@@ -117,7 +119,7 @@ body{
     justify-content: center;
 }
 
-.btn-principal{
+.btn-principal__link{
     color: white;
     border: none;
     background-color: black;
@@ -127,9 +129,10 @@ body{
     font-size: 1.2rem;
     transition: .2s ease-in all;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.btn-principal:hover{
+.btn-principal__link:hover{
     transform: translateY(-5px);
 }
 
