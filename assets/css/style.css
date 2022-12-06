@@ -62,6 +62,21 @@ body{
     white-space: initial;
 }
 
+.skills-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 35%;
+}
+
+.social__item--skills{
+    font-size: 3rem;
+}
+
+.social__item--skills:hover{
+    transform: none;
+}
+
 .portfolio, .contact { margin-top: 7rem; }
 
 .portfolio__grilla {
@@ -226,6 +241,15 @@ body{
         margin: auto;
     }
 
+    .skills{
+        display: flex;
+        justify-content: center;
+    }
+
+    .skills-text{
+        width: 60%;
+    }
+
     .container{ padding: 0; }
 
     .main{ flex-direction: column; }
@@ -259,6 +283,19 @@ body{
     }
 
     .datos { text-align: center; }
+
+    .skills{
+        display: flex;
+        justify-content: center;
+    }
+
+    .social__item--skills{
+        font-size: 2.5rem;
+    }
+
+    .skills-text{
+        width: 60%;
+    }
 
     .portfolio__grilla{
         display: flex;
