@@ -125,12 +125,15 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 100%;
+    text-decoration: none;
     transition: .2s ease-in all;
     transform: scale(1);
 }
 
 .portfolio__link:hover{
     transform: scale(1.5);
+    background: black;
+    color: white;
 }
 
 .titulo__text-contact{
