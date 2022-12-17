@@ -86,6 +86,12 @@ body{
     width: 35%;
 }
 
+.btn__cv{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+}
+
 .social__item--skills{
     font-size: 3rem;
     list-style: none;
@@ -310,6 +316,10 @@ body{
 
     .skills{
         display: flex;
+        justify-content: center;
+    }
+
+    .btn__cv{
         justify-content: center;
     }
 
