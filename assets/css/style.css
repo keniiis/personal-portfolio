@@ -38,17 +38,7 @@ body{
 
 .perfil__img{
     border-radius:  50%;
-    transition: .10s, color 1s;
-        -webkit-transition: 1s, color .10s;
-        -moz-transition: 1s, color .10s;
-}
-
-.perfil__img:hover{
-    transform: rotateY(180deg);
-        -webkit-transform: rotateY(180deg);
-        -moz-transform: rotateY(180deg);
-}
-              
+}         
 
 .perfil__logo{
     width: 60px;
@@ -262,12 +252,20 @@ body{
         margin-top: 3em;
     }
 
-    .perfil__img{ width: 100%; }
+    .perfil__img{ 
+        width: 100%; 
+        height: 180px;
+    }
 
     .perfil__logo{
         width: 30px;
         height: 30px;
-        bottom: 0px;
+        bottom: 0px;  
+    }
+
+    .logo{
+        width: 100%;
+        height: 30px;
     }
 
     .datos{ text-align: center; }
