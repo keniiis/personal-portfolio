@@ -38,7 +38,17 @@ body{
 
 .perfil__img{
     border-radius:  50%;
+    transition: .10s, color 1s;
+        -webkit-transition: 1s, color .10s;
+        -moz-transition: 1s, color .10s;
 }
+
+.perfil__img:hover{
+    transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+}
+              
 
 .perfil__logo{
     width: 60px;
@@ -226,6 +236,9 @@ body{
 .social__item{
     list-style: none;
     transition: .2s ease-in all;
+    transition: .2s ease-in all;
+        -webkit-transition: .2s ease-in all;
+        -moz-transition: .2s ease-in all;
 }
 
 .social__link{
@@ -236,9 +249,10 @@ body{
     padding: 20px;
 }
 
-
 .social__item:hover{
-    transform: translateY(-5px);
+    transform: scale3d(1.1, 1.1, 0.3);
+        -webkit-transform: scale3d(1.1, 1.1, 0.3);
+        -moz-transform: scale3d(1.1, 1.1, 0.3);
 }
 
 @media screen and (max-width: 576px) {
