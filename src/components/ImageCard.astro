@@ -1,0 +1,40 @@
+---
+import ListOfProjects from "./ListOfProjects.astro";
+import Texto from "./Texto.astro";
+import Title from "./Title.astro";
+
+---
+
+<section class="flex">
+    <!-- <div class="flex-1 max-w-[1120px] mx-auto p-10">
+        <div class="md:h-[800px] grid grid-cols-1 sm:grid-cols-2 grid-rows-1 sm:grid-rows-2 md:grid-cols-5 md:grid-rows-6 gap-4">
+            <figure class="bg-black rounded-lg shadow-xl md:col-span-3 md:row-span-2 overflow-hidden">
+                <img class="w-full h-full object-cover" src="./reproductor-musica.webp" alt="image-1"/>
+                <figcaption class="hidden">Descripción de la imagen 1</figcaption>
+            </figure>
+            <figure class="bg-black rounded-lg shadow-xl md:col-span-2 md:row-span-2 overflow-hidden">
+                <img class="w-full h-full object-cover" src="./portafolio-6-99.webp" alt="image-2"/>
+                <figcaption class="hidden">Descripción de la imagen 2</figcaption>
+            </figure>
+            <figure class="bg-black rounded-lg shadow-xl md:col-span-2 md:row-span-4 overflow-hidden">
+                <img class="w-full h-full object-cover" data-src="./portfolio.webp" src="./portfolio.webp" alt="image-3"/>
+                <figcaption class="hidden">Descripción de la imagen 3</figcaption>
+            </figure>
+            <figure class="bg-black rounded-lg shadow-xl md:col-span-3 md:row-span-2 overflow-hidden">
+                <img class="w-full h-full object-cover" data-src="./lubricentro.webp" src="./lubricentro.webp" alt="image-4"/>
+                <figcaption class="hidden">Descripción de la imagen 4</figcaption>
+            </figure>
+            <figure class="bg-black rounded-lg shadow-xl sm:col-span-2 md:col-span-3 md:row-span-2 overflow-hidden">
+                <img class="w-full h-full object-cover" data-src="./drumfest.webp" src="./drumfest.webp" alt="image-5"/>
+                <figcaption class="hidden">Descripción de la imagen 5</figcaption>
+            </figure>
+        </div>
+    </div> -->
+    <div class="flex-1 max-w-[1120px] m-auto p-10">
+        <Title level="h2" titulo="My Projects"/>
+        <Texto text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum." margin="m-inherit"/>
+        <section>
+            <ListOfProjects />
+        </section>
+    </div>
+</section>

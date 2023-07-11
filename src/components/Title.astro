@@ -1,0 +1,15 @@
+---
+interface Props {
+  level: string;
+  titulo: string;
+}
+
+const {level, titulo} = Astro.props;
+---
+
+{level === 'h1' ? (
+  <h1 class="text-60 font-title font-medium">{titulo}</h1>
+) : (
+  <h2 class="text-4xl text-blue-800">{titulo}</h2>
+)}
+

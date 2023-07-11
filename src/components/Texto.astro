@@ -1,0 +1,10 @@
+---
+interface Props{
+    text: string;
+    margin?: string;
+}
+
+const {text, margin} = Astro.props;
+---
+
+<p class={`text-14 w-[80%] ${margin ? margin : 'm-auto' } text-[#4c4c4b]`}>{text}</p>

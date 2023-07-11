@@ -1,4 +1,6 @@
 ---
+import Hero from '../components/Hero.astro';
+import ImageCard from '../components/ImageCard.astro';
 ---
 
 <html lang="en">
@@ -7,9 +9,15 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Amiko&family=Mandali&family=Raleway:wght@500;600&display=swap" rel="stylesheet">
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
 		<title>Astro</title>
 	</head>
-	<body>
-		<h1>actualizando...</h1>
+	<body class="bg-[#fff3e4]">
+		<!-- <header></header> -->
+		<Hero />
+		<ImageCard/>
 	</body>
 </html>

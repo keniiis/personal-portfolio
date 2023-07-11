@@ -1,0 +1,30 @@
+---
+import Texto from "./Texto.astro";
+import Title from "./Title.astro";
+
+---
+
+<main class="flex flex-col items-center mt-20 justify-evenly h-[500px]">
+    <figure class="w-[200px] relative">
+      <img class="rounded-full outln outline-offset-8" src="./avatar.jpg" alt="Imagen de Daniel Peña, Frontend developer">
+      <div class="flex items-center justify-center border-4 border-[#fff3e4] absolute right-0 bottom-[-10px] w-[60px] h-[60px] rounded-full bg-black">
+        <img class="w-[100px] h-[30px] invert" src="./DP-LOGO.svg" alt="Logo de Daniel Peña">
+      </div>
+    </figure>
+  
+    <div class="text-center mt-5">
+      <span class="text-20 font-subtitle tracking-4-5 text-[#4c4c4b]">Frontend Developer</span>
+      <Title level="h1" titulo="Daniel Peña"/>
+      <Texto text="Finally, I figured it out, enjoy, live and work hard for what you want."/>
+    </div>
+
+    <div class="mt-5">
+        <a class="text-white bg-black rounded-full px-12 py-4 text-20 font-title" href="./assets/cv-daniel-pena.pdf" download>Download cv</a>
+    </div>
+</main>
+
+<style>
+  .outln {
+    outline: 2px solid black;
+  }
+</style>
