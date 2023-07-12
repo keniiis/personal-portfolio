@@ -1,42 +1,17 @@
 ---
+import { projects } from '../data/projects.js'
 import ProjectsItems from './ProjectsItems.astro'
-
-const projects = [
-    {
-        title: 'Titulo 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-        image: 'reproductor-musica.webp',
-    },
-    {
-        title: 'Titulo 2',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',        
-        image: 'portafolio-6-99.webp',
-    },
-    {
-        title: 'Titulo 3',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',        
-        image: 'portfolio.webp',
-    },
-    {
-        title: 'Titulo 4',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-        image: 'lubricentro.webp',
-    },
-    {
-        title: 'Titulo 5',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.', 
-        image: 'drumfest.webp',    
-    },
-] 
 ---
 
 <ul class="mt-8">
     {
-        projects.map(({title, description, image}) => (
-            <li class="border border-slate-700 rounded-xl mb-3">
-                <ProjectsItems title={title} description={description} image={image} />
-            </li>
-        ))
+        projects.map(({title, description, image, link, technologies}, index) => {
+            let id = "." + (index + 1).toString().padStart(2, '0');
+            return (
+                <li class="relative border border-slate-700/50 dark:border-slate-700/100 rounded-xl mb-3">
+                    <ProjectsItems id={id} title={title} description={description} image={image} link={link} technologies={technologies}/>
+                </li>
+            )
+        })
     }
 </ul>
-

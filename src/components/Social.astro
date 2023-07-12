@@ -1,0 +1,25 @@
+---
+import { icos } from '../data/projects.js'
+---
+
+<ul class="flex justify-evenly items-center mt-16">
+    {
+         Object.entries(icos).map(([name, ico]) => (
+            <li>
+                <a class={`bg-${name} bg-no-repeat inline-block cursor-pointer bg-32 dark:invert`} href="#">
+                    <img class="scale-100 opacity-100 hover:opacity-0 hover:scale-150 hover:transition-all hover:duration-300 hover:ease-in w-8 dark:invert-0" src={`${ico}`} alt={`${name}`}>
+                </a>
+            </li>
+        ))
+    }          
+</ul>
+
+<style>
+    .bg-twitter { background: url('./twitter.svg'); }
+    
+    .bg-linkedin { background: url('./linkedin.svg'); }
+
+    .bg-github { background: url('./github.svg'); }
+
+    .bg-instagram { background: url('./instagram.svg'); }    
+</style>

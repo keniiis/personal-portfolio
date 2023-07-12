@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+	darkMode: "class", // or 'media' or 'class'
 	theme: {
 		extend: {
 			fontSize: {
@@ -25,6 +26,13 @@ module.exports = {
 			},
 			letterSpacing: {
 				'4-5': '4.5px',
+			},
+			backgroundPosition: {
+				'cero': '0 0',
+			},
+			backgroundSize: {
+				'32': '32px',
+				'28': '28px',
 			},
 		},
 	},
