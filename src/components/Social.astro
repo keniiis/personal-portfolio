@@ -4,10 +4,10 @@ import { icos } from '../data/projects.js'
 
 <ul class="flex justify-evenly items-center mt-16">
     {
-         Object.entries(icos).map(([name, ico]) => (
+         Object.entries(icos).map(([name, {icon, link}]) => (
             <li>
-                <a class={`bg-${name} bg-no-repeat inline-block cursor-pointer bg-32 dark:invert`} href="#">
-                    <img class="scale-100 opacity-100 hover:opacity-0 hover:scale-150 hover:transition-all hover:duration-300 hover:ease-in w-8 dark:invert-0" src={`${ico}`} alt={`${name}`}>
+                <a target="_blank" class={`bg-${name} bg-no-repeat inline-block cursor-pointer bg-32 dark:invert`} href={link}>
+                    <img class="scale-100 opacity-100 hover:opacity-0 hover:scale-150 hover:transition-all hover:duration-300 hover:ease-in w-8 dark:invert-0" src={icon} alt={name}>
                 </a>
             </li>
         ))

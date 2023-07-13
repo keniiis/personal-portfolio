@@ -1,8 +1,8 @@
 export const icos = {
-    "twitter": "./twitter.svg",
-    "linkedin": "./linkedin.svg",
-    "github": "./github.svg",
-    "instagram": "./instagram.svg"
+    "twitter": {icon: "./twitter.svg", link: "https://twitter.com/Danipena3488"},
+    "linkedin": {icon: "./linkedin.svg", link: "https://www.linkedin.com/in/danielpena88/"},
+    "github": {icon: "./github.svg", link: "https://github.com/keniiis"},
+    "instagram": {icon: "./instagram.svg", link: "https://www.instagram.com/danielpena.88/"}
 };
 
 export const techSVGs = {

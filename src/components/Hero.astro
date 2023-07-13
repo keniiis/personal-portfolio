@@ -4,10 +4,7 @@ import Title from "./Title.astro";
 
 <main class="flex flex-col lg:flex-row lg:justify-center lg:gap-[88px] items-center my-40 mx-0 justify-evenly">
     <figure class="w-[200px] lg:w-[280px] relative">
-      <img class="rounded-full outln dark.outln-w outline-offset-8" src="./avatar.jpg" alt="Imagen de Daniel Peña, Frontend developer">
-      <div class="flex items-center justify-center border-4 border-gradient-to-r from-rose-100 to-teal-100 absolute right-0 bottom-[-10px] w-[60px] h-[60px] lg:w-[90px] lg:h-[90px] rounded-full bg-black">
-        <img class="w-[100px] h-[30px] lg:h-[50px] invert" src="./DP-LOGO.svg" alt="Logo de Daniel Peña">
-      </div>
+      <img class="rounded-full outline outline-2 outline-offset-8 dark:outline-slate-700/100" src="./avatar.jpg" alt="Imagen de Daniel Peña, Frontend developer">
     </figure>
     <div>
       <div class="text-center mt-5 lg:text-start">
@@ -21,13 +18,3 @@ import Title from "./Title.astro";
       </div>
     </div>
 </main>
-
-<style>
-  .outln {
-    outline: 2px solid black;
-  }
-
- .dark .outln-w {
-    outline: 2px solid white;
-  }
-</style>
