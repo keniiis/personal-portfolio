@@ -34,6 +34,15 @@ module.exports = {
 				'32': '32px',
 				'28': '28px',
 			},
+			transitionDuration: {
+				'0': '0ms',
+				'2000': '2000ms', 
+			},
+			transform: ['hover', 'focus'],
+			opacity: {
+				'0': '0',
+				'100': '1',
+			},
 		},
 	},
 	plugins: [],

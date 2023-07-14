@@ -1,8 +1,8 @@
 export const icos = {
-    "github": {icon: "./github.svg", link: "https://github.com/keniiis"},
-    "linkedin": {icon: "./linkedin.svg", link: "https://www.linkedin.com/in/danielpena88/"},
-    "twitter": {icon: "./twitter.svg", link: "https://twitter.com/Danipena3488"},
-    "instagram": {icon: "./instagram.svg", link: "https://www.instagram.com/danielpena.88/"}
+    "github": {icon: "./github.svg", link: "https://github.com/keniiis", fade: "fade"},
+    "linkedin": {icon: "./linkedin.svg", link: "https://www.linkedin.com/in/danielpena88/", fade: "fade2"},
+    "twitter": {icon: "./twitter.svg", link: "https://twitter.com/Danipena3488", fade: "fade3"},
+    "instagram": {icon: "./instagram.svg", link: "https://www.instagram.com/danielpena.88/", fade: "fade4"}
 };
 
 export const techSVGs = {
@@ -16,7 +16,7 @@ export const techSVGs = {
 export const projects = [
     {
         title: 'musical-player',
-        description: 'I created a music player using HTML5, CSS3, and JavaScript! 🎶',
+        description: 'I created a music player using HTML5, CSS3, and JavaScript!🎵',
         image: 'reproductor-musica.webp',
         link : 'https://profound-babka-649a0b.netlify.app/',
         technologies: ['html5', 'css3', 'js'],
