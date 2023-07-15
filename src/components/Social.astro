@@ -1,13 +1,25 @@
 ---
 import { icos } from '../data/projects.js'
+
+export interface Props {
+    bgSize?: string;
+    wSize?: string;
+    ulWidth?: string;
+    maTop?: string;
+    justify?: string;
+    dNone?: string;
+    dFlex?: string;
+}
+
+const { bgSize, wSize, ulWidth, maTop, justify, dFlex, dNone } = Astro.props;
 ---
 
-<ul class="flex justify-evenly items-center mt-16">
+<ul class={`${dFlex ? dFlex :'flex'} ${dNone ? dNone : 'hidden-i'} ${justify ? justify : 'justify-evenly'} items-center ${maTop ? maTop : 'mt-16'} ${ulWidth ? ulWidth : 'w-[inherit]'}`}>
     {
          Object.entries(icos).map(([name, {icon, link, fade}]) => (
             <li class={`${fade}`}>
-                <a target="_blank" class={`bg-${name} bg-no-repeat inline-block cursor-pointer bg-32 dark:invert ${fade}`} href={link}>
-                    <img class="scale-100 opacity-100 hover:opacity-0 hover:scale-150 hover:transition-all hover:duration-300 hover:ease-in w-8 dark:invert-0" src={icon} alt={name}>
+                <a target="_blank" class={`bg-${name} bg-no-repeat inline-block cursor-pointer ${bgSize ? bgSize : 'bg-32'} dark:invert ${fade}`} href={link}>
+                    <img class={`scale-100 opacity-100 hover:opacity-0 hover:scale-150 hover:transition-all hover:duration-300 hover:ease-in ${wSize ? wSize : 'w-8'} dark:invert-0`} src={icon} alt={name}>
                 </a>
             </li>
         ))
@@ -21,5 +33,5 @@ import { icos } from '../data/projects.js'
 
     .bg-github { background: url('/github.svg'); }
 
-    .bg-instagram { background: url('/instagram.svg'); }    
+    .bg-instagram { background: url('/instagram.svg'); }
 </style>

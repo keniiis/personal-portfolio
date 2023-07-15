@@ -8,7 +8,7 @@ import ProjectsItems from './ProjectsItems.astro'
         projects.map(({title, description, image, link, technologies}, index) => {
             let id = "." + (index + 1).toString().padStart(2, '0');
             return (
-                <li id={id} class="relative border border-slate-700/20 dark:border-slate-700/100 rounded-xl mb-3 fade-in">
+                <li id={id} class="relative border border-slate-700/20 dark:border-[#314156] dark:bg-[#21293645] rounded-xl mb-3 fade-in">
                 <ProjectsItems id={id} title={title} description={description} image={image} link={link} technologies={technologies}/>
                 </li>
             )

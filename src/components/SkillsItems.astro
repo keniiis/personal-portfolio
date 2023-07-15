@@ -1,0 +1,13 @@
+---
+interface Props {
+  img: string;      
+  title: string;
+  wImage: string;
+}
+
+const { img, title, wImage } = Astro.props;
+
+---
+<div class="aspect-square border border-slate-700/20 dark:border-[#314156] dark:bg-[#21293645] flex justify-center items-center rounded-md fade-in">
+    <img class={wImage} src={img} alt={title} />
+</div>

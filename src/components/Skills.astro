@@ -1,0 +1,20 @@
+---
+import Title from "./Title.astro";
+
+import { skills } from "../data/projects.js";
+import SkillsItems from "./SkillsItems.astro";
+---
+
+<section class="lg:flex md:flex hidden">
+    <div class="flex-1 max-w-[1120px] m-auto p-10">
+        <div class="text-center mb-8">
+            <Title titulo="Skills" level="h2" />
+        </div>
+        <div class="grid grid-cols-5 gap-4">
+            {Object.keys(skills).map(skill => (
+                <SkillsItems wImage={skills[skill].wImage} img={skills[skill].img} title={skill} />
+            ))}
+        </div>
+    </div>
+</section>
+

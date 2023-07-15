@@ -33,6 +33,8 @@ module.exports = {
 			backgroundSize: {
 				'32': '32px',
 				'28': '28px',
+				'24': '24px',
+				'16': '16px',
 			},
 			transitionDuration: {
 				'0': '0ms',

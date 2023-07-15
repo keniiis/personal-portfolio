@@ -5,6 +5,19 @@ export const icos = {
     "instagram": {icon: "./instagram.svg", link: "https://www.instagram.com/danielpena.88/", fade: "fade4"}
 };
 
+export const skills = {
+    "html5": {img: "./html5.svg", wImage: "w-[50px]"},
+    "css3": {img: "./css.svg", wImage: "w-[50px]"},
+    "js": {img: "./javascript.svg", wImage: "w-[50px]"},
+    "typescript": {img: "./typescript.svg", wImage: "w-[50px]"},
+    "astro": {img: "./astro.svg", wImage: "w-[35px]"},
+    "nextjs": {img: "./nextjs.svg", wImage: "w-[50px]"},
+    "tailwind": {img: "./tailwindcss.svg", wImage: "w-[50px]"},
+    "mysql": {img: "./mysql.svg", wImage: "w-[50px]"},
+    "git": {img: "./git.svg", wImage: "w-[50px]"},
+    "figma": {img: "./figma.svg", wImage: "w-[30px]"},
+} 
+
 export const techSVGs = {
     "html5": "./html5.svg",
     "css3": "./css.svg",
