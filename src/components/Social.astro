@@ -9,17 +9,18 @@ export interface Props {
     justify?: string;
     dNone?: string;
     dFlex?: string;
+    grAFlow?: string;
 }
 
-const { bgSize, wSize, ulWidth, maTop, justify, dFlex, dNone } = Astro.props;
+const { bgSize, wSize, ulWidth, maTop, justify, dFlex, dNone, grAFlow } = Astro.props;
 ---
 
-<ul class={`${dFlex ? dFlex :'flex'} ${dNone ? dNone : 'hidden-i'} ${justify ? justify : 'justify-evenly'} items-center ${maTop ? maTop : 'mt-16'} ${ulWidth ? ulWidth : 'w-[inherit]'}`}>
+<ul class={`${dFlex ? dFlex :'flex'} ${grAFlow} ${dNone ? dNone : 'display-inherit'} ${justify ? justify : 'justify-evenly'} items-center ${maTop ? maTop : 'mt-16'} ${ulWidth ? ulWidth : 'w-[inherit]'}`}>
     {
          Object.entries(icos).map(([name, {icon, link, fade}]) => (
             <li class={`${fade}`}>
                 <a target="_blank" class={`bg-${name} bg-no-repeat inline-block cursor-pointer ${bgSize ? bgSize : 'bg-32'} dark:invert ${fade}`} href={link}>
-                    <img class={`scale-100 opacity-100 hover:opacity-0 hover:scale-150 hover:transition-all hover:duration-300 hover:ease-in ${wSize ? wSize : 'w-8'} dark:invert-0`} src={icon} alt={name}>
+                    <img class={`scale-100 opacity-100 hover:opacity-0 hover:scale-150 hover:transition-all hover:duration-300 hover:ease-in inherit ${wSize ? wSize : 'w-8'} dark:invert-0`} src={icon} alt={name}>
                 </a>
             </li>
         ))
@@ -34,4 +35,5 @@ const { bgSize, wSize, ulWidth, maTop, justify, dFlex, dNone } = Astro.props;
     .bg-github { background: url('/github.svg'); }
 
     .bg-instagram { background: url('/instagram.svg'); }
+
 </style>

@@ -94,8 +94,4 @@
 .fade-down.in-view {
     opacity: 1;
     transform: translateY(0);
-}
-
-.hidden-i{
-    display: inherit; 
-}   
+} 

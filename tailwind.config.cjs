@@ -47,5 +47,11 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [
+		function ({ addUtilities }) {
+		  addUtilities({
+			'.display-inherit': { display: 'inherit' },
+		  })
+		},
+	  ],
 }
