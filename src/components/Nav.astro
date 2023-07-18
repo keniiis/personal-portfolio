@@ -1,44 +1,14 @@
 ---
 import DarkMode from "./DarkMode.astro";
 ---
-
-<script>
-    function toggleHamburgerMenu() {
-      (document.getElementById("toggle_nav") as HTMLInputElement).checked = false;
-    }
-  
-    document.addEventListener("click", (e) => {
-      const target = e.target as HTMLElement;
-  
-      const clickedElementIsAnchor =
-        target &&
-        !target.matches("#hamburguer") &&
-        (target.matches("a") ||
-          target.matches(
-            "a *"
-          )); /** *? la parte de target.matches() dice: si el elemento que recibió el click (target) coincide (matches) con este selector (el selector que le pasas a matches(""), entonces cerrá el menu a matches() le podes pasar cualquier selector como los de CSS por ejemplo a.my-link o #my-id */
-  
-      if (clickedElementIsAnchor) {
-        toggleHamburgerMenu();
-      }
-    });
-  </script>
-  
   <nav
     class="w-full top-0 left-0 fixed lg:overflow-hidden bg-white/5 ring-gray-900/5 backdrop-blur-lg bg-opacity-70 z-20 animate-fade-down animate-duration-[2000ms]"
   >
-    <div class="mx-auto max-w-7xl px-6 md:px-12 xl:px-6 fade-down">
+    <div class="max-w-[1120px] mx-auto px-6 md:px-12 xl:px-6 fade-down">
       <div
         class="relative flex flex-wrap items-center justify-between gap-6 py-2 md:gap-0 md:py-4"
       >
-        <input
-          aria-hidden="true"
-          type="checkbox"
-          name="toggle_nav"
-          id="toggle_nav"
-          class="peer hidden"
-        />
-        <div class="relative z-20 flex w-full justify-between items-center md:px-0 lg:w-max">
+        <div class="relative z-20 flex w-full justify-between items-center md:px-0">
           <a href="/"
             ><img
               class="w-16 dark:invert"
@@ -46,63 +16,9 @@ import DarkMode from "./DarkMode.astro";
               alt="Imagen corpotativa Daniel Peña"
             /></a
           >
-          <div class="relative flex max-h-10 items-center lg:hidden">
-            <label
-              role="button"
-              for="toggle_nav"
-              aria-label="humburger"
-              id="hamburger"
-              class="relative -mr-6 p-6"
-            >
-              <div
-                aria-hidden="true"
-                id="line"
-                class="m-auto h-0.5 w-5 bg-gray-700 rounded transition duration-300 dark:bg-gray-300"
-              >
-              </div>
-              <div
-                aria-hidden="true"
-                id="line2"
-                class="m-auto mt-2 h-0.5 w-5 bg-gray-700 rounded transition duration-300 dark:bg-gray-300"
-              >
-              </div>
-            </label>
-          </div>
-        </div>
-        <div
-          aria-hidden="true"
-          class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 backdrop-blur-2xl bg-white/70 transition duration-500 peer-checked:origin-top peer-checked:scale-y-100 dark:bg-gray-900/70 lg:hidden"
-        >
-        </div>
-        <div
-          class="text-center bg-gradient-to-r from-gray-700 via-gray-900 to-black invisible absolute left-0 top-full z-20 w-full origin-top translate-y-1 scale-95 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 peer-checked:visible peer-checked:scale-100 peer-checked:opacity-100 dark:shadow-none lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-none lg:p-0 lg:opacity-100 lg:shadow-none lg:peer-checked:translate-y-0"
-        >
-          <div
-            class="w-full lg:text-white dark:text-gray-300 lg:w-auto lg:pr-4 lg:pt-0 text-center text-xl"
-          >
-            <ul
-              class="flex flex-col gap-6 font-medium tracking-wide lg:flex-row lg:gap-0 lg:text-xl"
-            >
-                <li>
-                    <a
-                    href="#"
-                    class="text-white lg:dark:hover:text-[#afafaf] lg:text-slate-700 block md:px-4 transition font-subtitle text-18 dark:text-white"
-                    >
-                    <span>Blog</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                    href="#"
-                    class="text-white lg:dark:hover:text-[#afafaf] lg:text-slate-700 block md:px-4 transition font-subtitle text-18 dark:text-white"
-                    >
-                    <span>Side Projects</span>
-                    </a>
-                </li>
-                </ul>
-            </div>
+            
     
-            <div class="mt-4 lg:mt-0">
+            <div class="mt-0">
               <a
                 href="#"
                 class="flex items-center justify-center"
@@ -113,7 +29,7 @@ import DarkMode from "./DarkMode.astro";
                 </div>
                   
               </a>
-          </div>
+          
         </div>
       </div>
     </div>
