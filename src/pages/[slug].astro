@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Nav from '../components/Nav.astro';
+
+export async function getStaticPaths() {
+  const posts = await Astro.glob('./posts/**/*.md')
+
+  return posts.map(post => ({
+    params: {
+      slug: post.frontmatter.slug
+    },
+    props: {
+      post
+    },
+  }))
+}
+
+const { Content, frontmatter } = Astro.props.post
+---
+<Layout title={`${frontmatter.title}`} description={`${frontmatter.description}`}>
+    <Nav/>
+    <article class="mt-28 text-white [&>h1]:text-lime-300">
+        <Content/>
+    </article>
+</Layout>
