@@ -52,6 +52,9 @@ module.exports = {
 		function ({ addUtilities }) {
 		  addUtilities({
 			'.display-inherit': { display: 'inherit' },
+			'.position-inherit': { position: 'inherit' },
+			'.bottom-inherit': { bottom: 'inherit' },
+			'.width-inherit': { width: 'inherit' },
 		  })
 		},
 	  ],

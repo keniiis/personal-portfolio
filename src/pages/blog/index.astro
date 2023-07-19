@@ -1,24 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro"
 import Nav from '../../components/Nav.astro';
+import Foot from "../../components/Foot.astro";
 
 const posts = await Astro.glob("./posts/*.md")
 ---
 
-<Layout title="Blog" description="blogiii">
+<Layout title="Blog | Daniel Peña" description="Blog of technological content in the web programming industry">
     <Nav />
     <div class="max-w-[1120px] m-auto p-10 my-40 border border-slate-700/20 dark:border-[#314156] dark:bg-[#21293645] rounded-xl">
         <h1 class="text-4xl font-bold dark:bg-gradient-to-r dark:from-rose-100 dark:to-teal-100 dark:text-transparent dark:bg-clip-text">Join me for a swim in my thoughts and opinions...</h1>
         <ul class="mt-4">
             {posts.map((post) => (
-                <a href={`/${post.frontmatter.slug}`}>
+                <a href={`/blog/${post.frontmatter.slug}`}>
                     <li class="p-4 mb-4 border border-slate-700/20 dark:border-[#314156] dark:bg-[#21293645] rounded-xl"> 
-                        <h2 class="text-2xl font-bold text-slate-200 mb-2">{post.frontmatter.title}</h2>
-                        <p class="text-[darkgray] mb-4">{post.frontmatter.description}</p>
-                        <time class="text-slate-200" datetime={`${post.frontmatter.pubDate}`}>{post.frontmatter.pubDate}</time>
+                        <h2 class="text-2xl font-bold text-[#7d8287] mb-2">{post.frontmatter.title}</h2>
+                        <p class="text-[#4d939b] mb-4">{post.frontmatter.description}</p>
+                        <time class="text-[#7d8287]" datetime={`${post.frontmatter.pubDate}`}>{post.frontmatter.pubDate}</time>
                     </li>
                 </a>
             ))}
         </ul>
     </div>
+    <Foot posiAbsoluta="absolute" wFoo="w-full" bottom="bottom-0"/>
 </Layout>
