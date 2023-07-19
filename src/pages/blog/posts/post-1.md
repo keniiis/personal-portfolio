@@ -1,0 +1,26 @@
+---
+title: '[Es] Por fin descubri el secreto para programar ¡no lo podras creer!'
+slug: por-fin-descubri-el-secreto-para-programar-no-lo-podras-creer
+author: Daniel Peña
+description: De seguro viste el título y pensaste “es click bait” y la verdad es sí… y no, te explico, tiene click bait, porque no es secreto, todo aquel que domina el arte de codificar...
+pubDate: 19 Jun, 2023
+---
+
+Hola de nuevo, de seguro viste el título y pensaste “es click bait” y la verdad es sí… y no, te explico, tiene click bait, porque no es secreto, todo aquel que domina el arte de codificar, seguro estará de acuerdo con lo que comentaré en esta entrada.
+
+En mi post anterior, comente que no era un ejemplo a seguir a la hora de ser aplicado en lo que a constancia y programación se refiere, pero como parte de mi cambio decidí transformar ciertas cosas para mejorar esto. En fin, no nos desviemos del tema, siempre fui malo en programación, en la universidad pase gracias a mis compañeros (lo que no me enorgullece) e incluso después abandone por completo la idea de volver a tocar código, no quería saber nada ¡pero nada! Pasaron los años (leíste bien, años) y por azares del destino, comencé a crear sitios web con mi amigo, él es lo contrario a mí, es como bob esponja a la hora de absorber conocimiento, con decir que en dos horas aprendió flexbox, lo que a mí me tomo mucho tiempo, mi interior se preguntaba ¿Cómo lo hacía? O le decía “También quiero vivir ese hermoso sueño, don pool”, lamentablemente, volvía a repetir las malas costumbres de antaño, de no hacer nada y dejar que los demás hagan todo por mí, esta vez no será así… Comencé con crear botones en HTML, CSS y antes que digas que usar estas tecnologías, no es programar, dame un momento y te explico. Cuando hablamos de programar viene a nuestra mente la terrorífica palabra «lógica» ¡uf! Odio eso, como sabrás a muchos nos cuesta y otros vienen de fábrica con ese privilegio ¿Eres de este exclusivo grupo? Si la respuesta es no, te diré que ellos usan su don, nosotros usaremos traspiración.
+
+Te comentaré cuál es el secreto, y es constancia y repetición ¿Qué? ¿Esperabas magia negra? Cuando lo descubrí pensé “cuanto tiempo perdido” ¡ahora! Es importante subrayar un inciso, cada uno es un mundo y existen muchas formas para alcanzar este objetivo, yo hablare de este, pero puedes optar por, diagramas de flujo, tutoriales, servilletas, etc.
+
+Yo sufrí del síndrome «Loop del tutorial», ¡es terrible! Ver y ver videos, algunos de ellos de horas de reproducción, ¿Los practicaba? No… ahora hago una serie de pasos, para mejorar mis hábitos y lógica de programación.
+
+**Constancia**: nada de esto ocurriría sin esta bendita palabra, será la llave del éxito, si practicas aunque sea una hora al día, verás que con el paso del tiempo y por acto de magia dominaras ciertos conceptos que ahora no manejas ¿Por qué? Por la…
+
+**Repetición**: Soy un fanático de películas como “El señor de los anillos” e “interestelar”, las he visto muchas veces, tanto que sé qué dirán ¿Curioso? Seguro también te ha pasado, o con la música, o como crees que te sabes esos temones de reggaetón, en la programación no es diferente, cuando veía como hacer un “IF” creía ya saberlo, lo dejaba de lado pensando “ya lo sé”, qué equivocado estaba, cada vez que necesitaba de esta condicional, tenía que recurrir a san Google ¿que pasa si lo hubiera practicado día a día? ¡Bingo! Así es… serías un Yedi del IF, sabrías como escribirlo correctamente, sus trucos, y más.
+
+**Bonus 1**: no te dejaré solo con eso, digamos que te gustan los tutoriales, lo realizas como te dicen en el video o artículo escrito, y te sale a la perfección, ¿Lo lograste? Sí, pero no ¿Volviste a repetir el ejercicio? Seguro que no, es importante que lo vuelvas a repetir, para acostumbrar tu cerebro a eso nuevo que estás aprendiendo, ¿Creaste un ejemplo similar pero con adiciones tuyas? Seguro, no es tu primer tutorial, y has aprendido otras cosas, es aquí donde debes hacerlo, no te quedes con lo aprendido del tutorial, agrega módulos nuevos, anota sentencias que desconoces de su origen, para investigarlo por tu cuenta.
+
+**Bonus 2**: cuando sigues un proyecto grande de un tutorial, ejemplo un login con registro de usuarios a una base de datos, uno lo sigue paso a paso, pasando por estilos y código extremadamente largo y tedioso, no digo que está mal, cuando te toque crearas más código, créeme, pero que pasa si haces un producto mínimo viable, crea un botón sin estilos con la funcionalidad de “inicio de sesión” ni más ni menos, después creamos un repositorio privado en GitHub con el título “inicio-sesión-simple”, o “conexión-base-de-datos-simple” ahora sabremos como hacerlo y como piezas de lego, unirlo a proyectos futuros que necesitemos de esta funcionalidad.
+Bueno, ya sabes como creo que se debe aprender a programar y desarrollar la lógica de programación, no dudes en dejar tus pensamientos en los comentarios, recuerda que nada está escrito en piedra, lo importante es que no pierdas las constantes ganas de aprender y te aseguro que terminaras trabajando para mí… perdón para Google, empresa TECH o sacar adelante tus proyectos personales.
+
+Nos vemos en el siguiente post, ¿por qué? ¿No te conté? Igual ocupó esta técnica para publicar domingo a domingo un artículo.

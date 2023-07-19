@@ -9,7 +9,7 @@ const {level, titulo, mTop} = Astro.props;
 ---
 
 {level === 'h1' ? (
-  <h1 class={`text-60 lg:text-76 font-title font-medium dark:text-white fade ${mTop ? mTop : 'mt-0'}`}>{titulo}</h1>
+  <h1 class={`text-60 lg:text-76 font-title font-medium dark:bg-gradient-to-r dark:from-rose-100 dark:to-teal-100 dark:text-transparent dark:bg-clip-text fade ${mTop ? mTop : 'mt-0'}`}>{titulo}</h1>
 ) : (
   <h2 class="font-title text-40 dark:text-[#c9c9c9] fade">{titulo}</h2>
 )}

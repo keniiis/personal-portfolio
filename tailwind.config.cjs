@@ -17,6 +17,7 @@ module.exports = {
 			  '40': 'clamp(1.8rem, 6.5vw, 2.5rem)',
 			  '48': 'clamp(1.875rem, 7vw, 3rem)',
 			  '60': 'clamp(2rem, 8vw, 3.75rem)',
+			  '72': 'clamp(2.15rem, 9vw, 4rem)',
 			  '76': 'clamp(2.25rem, 10vw, 4.75rem)',
 			},
 			fontFamily: {
