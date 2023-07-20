@@ -7,5 +7,6 @@ import robotsTxt from "astro-robots-txt";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://danielpena.dev',
-  integrations: [tailwind(), sitemap(), robotsTxt()]
+  integrations: [tailwind(), sitemap(), robotsTxt()],
+  adapter: vercel({analitics: true}),
 });
