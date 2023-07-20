@@ -1,12 +1,12 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Nav from '../components/Nav.astro';
-import Foot from '../components/Foot.astro';
+import Layout from "../../layouts/Layout.astro";
+import Nav from '../../components/Nav.astro';
+import Foot from '../../components/Foot.astro';
 
-import { icos } from '../data/projects.js'
+import { shared as iconos } from '../../data/projects.js'
 
 export async function getStaticPaths() {
-  const posts = await Astro.glob('./blog/posts/**/*.md')
+  const posts = await Astro.glob('./posts/**/*.md')
 
   return posts.map(post => ({
     params: {
@@ -22,6 +22,11 @@ const { Content, frontmatter } = Astro.props.post
 ---
 
 <script>
+  declare global{
+    interface Window {
+      share: (name: string, title: string) => void;
+    }
+  }
   try {
     window.share = (name, title) => {
       let shareLink;
@@ -52,7 +57,7 @@ const { Content, frontmatter } = Astro.props.post
     <Nav/>
     <div class="max-w-[1120px] bg-inherit lg:bg-white mt-36 mb-12 m-auto p-10 lg:border lg:border-slate-700/20 dark:lg:border-[#314156] dark:lg:bg-[#21293645] rounded-xl">
       <div class="mb-12">
-        <h1 class="dark:bg-gradient-to-r dark:from-rose-100 dark:to-teal-100 dark:text-transparent dark:bg-clip-text font-title text-72 text-center w-[75%] m-auto font-bold leading-none">{frontmatter.title}</h1>
+        <h1 class="dark:bg-gradient-to-r dark:from-rose-100 dark:to-teal-100 dark:text-transparent dark:bg-clip-text font-title text-72 text-center lg:w-[75%] m-auto font-bold leading-none">{frontmatter.title}</h1>
         <div class="text-[#b1b1b1] mt-4">
           <img class="w-[50px] rounded-full m-auto" src="/avatar.jpg" alt="Avatar">
           <p class="flex justify-center gap-2"><span class="text-center display-inherit">By </span>{frontmatter.author}</p>
@@ -69,20 +74,15 @@ const { Content, frontmatter } = Astro.props.post
         <Content/>
       </article>
       <div class="mt-16">
-        <h3 class="text-black dark:text-white text-18 mb-2">Share</h3>
+        <h2 class="text-black dark:text-white text-18 mb-2">Share</h2>
           <div class="flex gap-4">
             {
-              Object.keys(icos).map((name) => {
-                if (["twitter", "linkedin", "whatsapp"].includes(name)) {
-                  const {icon} = icos[name];
-                  return (
-                    <button onclick={`share('${name}', '${frontmatter.title}')`} class={`inline-block w-[40px] h-[40px] rounded-full bg-${name} text-[#4c4c4b] dark:text-[#c1c1c1] text-center leading-[40px] transition-colors duration-200 hover:bg-[#212936] dark:hover:bg-[#f5f5f5] dark:bg-white flex bg-[#4c4c4b]`}>
-                      <img src={icon} class="w-[20px] h-[20px] m-auto invert dark:invert-0" alt={name}>
-                    </button>
-                  )
-                }
-              })
-            }
+              iconos.map((icono) => (
+                <button class="inline-block w-[40px] h-[40px] rounded-full bg-${name} text-[#4c4c4b] dark:text-[#c1c1c1] text-center leading-[40px] transition-colors duration-200 hover:bg-[#212936] dark:hover:bg-[#f5f5f5] dark:bg-white flex bg-[#4c4c4b]" onclick={`share('${icono.name}', '${frontmatter.title}')`}>
+                  <img class="w-[20px] h-[20px] m-auto invert dark:invert-0" src={icono.icono} alt={icono.name}/>
+                </button>
+              ))
+            }            
         </div>        
        </div> 
     </div> 

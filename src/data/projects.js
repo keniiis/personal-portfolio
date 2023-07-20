@@ -1,3 +1,18 @@
+export const shared = [
+    {
+        name: 'twitter',
+        icono: '/twitter.svg',
+    },
+    {
+        name: 'linkedin',
+        icono: '/linkedin.svg',
+    },
+    {
+        name: 'whatsapp',
+        icono: '/whatsapp.svg',
+    }
+]
+
 export const icos = {
     "github": {icon: "./github.svg", link: "https://github.com/keniiis", fade: "fade"},
     "linkedin": {icon: "./linkedin.svg", link: "https://www.linkedin.com/in/danielpena88/", fade: "fade2"},
