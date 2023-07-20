@@ -1,12 +1,12 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import Nav from '../../components/Nav.astro';
-import Foot from '../../components/Foot.astro';
+import Layout from "../layouts/Layout.astro";
+import Nav from '../components/Nav.astro';
+import Foot from '../components/Foot.astro';
 
-import { icos } from '../../data/projects.js'
+import { icos } from '../data/projects.js'
 
 export async function getStaticPaths() {
-  const posts = await Astro.glob('./posts/**/*.md')
+  const posts = await Astro.glob('./blog/posts/**/*.md')
 
   return posts.map(post => ({
     params: {
@@ -84,7 +84,7 @@ const { Content, frontmatter } = Astro.props.post
               })
             }
         </div>        
-      </div>
-    </div>
+       </div> 
+    </div> 
     <Foot />
-</ Layout>
+</Layout>
