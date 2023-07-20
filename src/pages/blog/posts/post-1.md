@@ -1,5 +1,5 @@
 ---
-title: '[Es] Por fin descubri el secreto para programar ¡no lo podras creer!'
+title: '[Es] Por fin descubrí el secreto para programar, ¡no lo podrás creer!'
 slug: por-fin-descubri-el-secreto-para-programar-no-lo-podras-creer
 author: Daniel Peña
 description: De seguro viste el título y pensaste “es click bait” y la verdad es sí… y no, te explico, tiene click bait, porque no es secreto, todo aquel que domina el arte de codificar...
