@@ -55,8 +55,12 @@ const { Content, frontmatter } = Astro.props.post
 
 <Layout title={`${frontmatter.title}`} description={`${frontmatter.description}`} author={`${frontmatter.author}`}>
     <Nav/>
+    <div class="relative lg:max-w-[1120px] m-auto top-32 left-12 lg:left-2 display-initial lg:block">
+      <a class="dark:text-slate-400" href="/blog"> ← Back to Blog</a>
+    </div>
     <div class="max-w-[1120px] bg-inherit lg:bg-white mt-36 mb-12 m-auto p-10 lg:border lg:border-slate-700/20 dark:lg:border-[#314156] dark:lg:bg-[#21293645] rounded-xl">
       <div class="mb-12">
+        <!-- <a class="dark:text-slate-400" href="/blog"> ← Back to Blog</a> -->
         <h1 class="dark:bg-gradient-to-r dark:from-rose-100 dark:to-teal-100 dark:text-transparent dark:bg-clip-text font-title text-72 text-center lg:w-[75%] m-auto font-bold leading-none">{frontmatter.title}</h1>
         <div class="text-[#b1b1b1] mt-4">
           <img class="w-[50px] rounded-full m-auto" src="/avatar.jpg" alt="Avatar">
