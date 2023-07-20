@@ -12,13 +12,13 @@ const posts = await Astro.glob("./posts/*.md")
         <h1 class="text-4xl font-bold dark:bg-gradient-to-r dark:from-rose-100 dark:to-teal-100 dark:text-transparent dark:bg-clip-text">Join me for a swim in my thoughts and opinions...</h1>
         <ul class="mt-4">
             {posts.map((post) => (
-                <a href={`/blog/${post.frontmatter.slug}`}>
-                    <li class="p-4 mb-4 border border-slate-700/20 dark:border-[#314156] dark:bg-[#21293645] rounded-xl"> 
+                <li class="mb-4 border border-slate-700/20 dark:border-[#314156] dark:bg-[#21293645] rounded-xl"> 
+                    <a class="p-4 block" href={`/blog/${post.frontmatter.slug}`}>
                         <h2 class="text-2xl font-bold text-[#7d8287] mb-2">{post.frontmatter.title}</h2>
                         <p class="text-[#4d939b] mb-4">{post.frontmatter.description}</p>
                         <time class="text-[#7d8287]" datetime={`${post.frontmatter.pubDate}`}>{post.frontmatter.pubDate}</time>
-                    </li>
-                </a>
+                    </a>  
+                </li>
             ))}
         </ul>
     </div>
