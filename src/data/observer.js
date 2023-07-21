@@ -7,7 +7,7 @@ const observerOptions = {
 };
 
 window.addEventListener('DOMContentLoaded', () => {
-  let targets = document.querySelectorAll('.fade-in, .fade, .fade2, .fade3, .fade4, .fade-down');
+  let targets = document.querySelectorAll('.fade-in, .fade, .fade2, .fade3, .fade4, .fade-down, .fade-down-fazt');
 
   observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {

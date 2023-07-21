@@ -85,6 +85,17 @@
     opacity: 1;
 }
 
+.fade-down-fazt{
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.fade-down-fazt.in-view{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .fade-down {
     opacity: 0;
     transform: translateY(-100%);
