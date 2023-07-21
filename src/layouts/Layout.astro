@@ -24,9 +24,17 @@ const { title, description, content, author, keywords } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Amiko&family=Mandali&family=Raleway:wght@500;600&display=swap" rel="stylesheet">
+		<link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Amiko&family=Mandali&family=Raleway:wght@500;600&display=swap" rel="stylesheet">
 		<link rel="sitemap" href="/sitemap-index.xml" />
 		<title>{title}</title>
+		<script :inline>
+			// Toma el tema desde localStorage
+			const colorTheme = localStorage.getItem('color-theme');
+			// Establece el tema a 'dark' si colorTheme es 'dark'
+			const theme = colorTheme === 'dark' ? 'dark' : '';
+			// Añade la clase dark a la etiqueta html para habilitar el dark mode
+			document.documentElement.classList.add(theme);
+		  </script>
 	</head>
 	<body class="bg-gradient-to-r from-rose-100 to-teal-100 dark:bg-gradient-to-r dark:from-gray-700 dark:via-gray-900 dark:to-black">
 		<slot/>
