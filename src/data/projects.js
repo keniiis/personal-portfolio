@@ -1,7 +1,7 @@
 export const shared = [
     {
         name: 'twitter',
-        icono: '/twitter.svg',
+        icono: '/twitter-x.svg',
     },
     {
         name: 'linkedin',
@@ -16,7 +16,7 @@ export const shared = [
 export const icos = {
     "github": {icon: "./github.svg", link: "https://github.com/keniiis", fade: "fade"},
     "linkedin": {icon: "./linkedin.svg", link: "https://www.linkedin.com/in/danielpena88/", fade: "fade2"},
-    "twitter": {icon: "./twitter.svg", link: "https://twitter.com/Danipena3488", fade: "fade3"},
+    "twitter": {icon: "./twitter-x.svg", link: "https://twitter.com/Danipena3488", fade: "fade3", bgSize : 'bg-38'},
     "instagram": {icon: "./instagram.svg", link: "https://www.instagram.com/danielpena.88/", fade: "fade4"},
     "whatsapp": {icon: "./whatsapp.svg", link: "https://wa.me/56933522021", fade: "fade4"},
 };
